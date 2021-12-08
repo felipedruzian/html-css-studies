@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Abra esse site em varios dispositivos!</p>
+    <picture>
+        <source media="(max-width: 600px)" srcset="img/perfil-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="img/perfil-m.png" type="image/png">
+        <img src="img/perfil-g.png" alt="Foto Grande">
+    </picture>
+    <h1>Reproduzindo Aúdio</h1>
+    <audio src="nggyu.mp3" controls autoplay></audio>
+    <!-- mp3 wav ogg -->
+    <audio>
+        <source src="nggyu.mp3" type="audio/mpeg">
+        <source src="nggyu.mp3" type="audio/ogg">
+        <source src="nggyu.mp3" type="audio/wav">
+        <p>Nao foi possivel carregar o audio. Baixe ele <a href="nggyu.mp3">aqui!</a></p>
+    </audio>
+
+    <h1>Reprodução de Videos</h1>
+    <p>720p mp4</p>
+    <video src="midia/Nggyu720p-1.mp4" width="500" controls></video>
+    <p>360p</p>
+    <video width="500" controls autoplay>
+        <source src="midia/nggyu360p.mp4" type="video/mp4">
+        <source src="midia/Nggyu360p-1.webm" type="video/webm">
+        <source src="midia/Nggyu720p-1.webm" type="video/webm">
+    </video>
+    <h2>Inserindo videos de sites externos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LACbVhgtx9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
