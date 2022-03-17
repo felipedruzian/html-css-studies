@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -69,16 +73,16 @@ header > nav > a {
 
 /**/
 
-.projects{
+#projects{
     text-align: center;
     margin-bottom: 100px;
 }
 
-.projects > h2 {
+#projects > h2 {
     padding-top: 15px;
 }
 
-.projects > button {
+#projects > a > button {
     width: 400px;
     height: 80px;
     margin: 15px 30px;
@@ -90,29 +94,50 @@ header > nav > a {
     box-shadow: 1px 1px 6px black;
 }
 
-/**/
-
 .SCA {
     background-image: url(SCAwb.jpg);
     background-size: cover;
     background-position: center;
     transition: 500ms;
-
+    
 }
 .SCA:hover {
     background-image: url(SCAwob.jpg);
     transition: 500ms;
 }
-section > .SCA {
+
+.CAR {
+    background-image: url(CARwb.jpg);
+    background-size: cover;
+    background-position: 0px -40px ;
+    transition: 500ms;
+
+}
+.CAR:hover {
+    background-image: url(CARwob.jpg);
+    transition: 500ms;
+}
+
+/**/
+
+section {
     text-align: center;
+}
+
+section > .SCA {
     padding: 120px;
 }
+
 section > div {
     box-shadow: 0px 0px 6px black;
 }
 .SCA > h2 {
     text-shadow: 2px 2px 5px black;
+    
+}
 
+section > .CAR {
+padding: 120px;
 }
 
 section > article{
@@ -134,18 +159,6 @@ section > article > div > p{
 }
 
 /**/
-
-#CAR {
-    background-image: url(CARwb.jpg);
-    background-size: cover;
-    background-position: 0px -40px ;
-    transition: 500ms;
-
-}
-#CAR:hover {
-    background-image: url(CARwob.jpg);
-    transition: 500ms;
-}
 
 footer {
     text-align: center;
