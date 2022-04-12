@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            background-color: gray;
+            text-align: center;
+            height: 30px;
+            width: 100px;
+            border: 1px solid black;
+            display: inline-block;
+            box-shadow: 10px 10px 10px black;
+        }
+
+        p{
+            background-color: gray;
+            text-align: center;
+            height: 30px;
+            width: 100px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 0px;
+            box-shadow: 10px 10px 10px black;
+        }
+
+        div:hover {
+            background-color: greenyellow;
+            height: 150px;
+            width: 150px;
+            transition: 300ms;
+        }
+
+        div#test {
+            height: 20px;
+        }
+
+        div#test:hover {
+            height: 80px;
+        }
+
+        div > div {
+            display: none;
+            height: 20px;
+            width: 149px;
+        }
+        div:hover > div {
+            display: block;
+        }
+
+        .menu {
+            width: 149px;
+            background-color: rgb(255, 205, 205);
+        }
+        .menu:hover {
+            background-color: cornflowerblue;
+            height: 20px;
+            width: 200px;
+        }
+
+        /*div > div:hover {
+            background-color: cornflowerblue;
+            height: 20px;
+            width: 200px;
+        }*/
+
+        
+    </style>
+</head>
+<body>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <p>04</p>
+    <hr>
+    <h3>Menu</h3>
+    <div id="test">
+        lul
+        <br>
+        <br>
+        <div class="menu">xesque</div>
+        <div class="menu">dele</div>
+    </div>
+</body>
+</html>

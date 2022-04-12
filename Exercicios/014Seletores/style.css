@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(255, 247, 234);
+    font: normal 1.2em Arial, serif;
+    text-align: justify;
+}
+
+h1#principal {
+    background-color: lightseagreen;
+    text-align: center;
+}
+
+
+h2 {
+    text-indent: 20px;
+}
+
+.sub1 {
+    background-color: indianred;
+}
+
+.sub2 {
+    background-color: khaki;
+}
+
+.destaque {
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+}
+
+.outros{
+text-indent: 50px;
+background-color: blue;
+}
