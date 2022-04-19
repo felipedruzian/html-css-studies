@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#space {
+    background-image: url(img/espaco.jpg);
+    background-position: center;
+}
+
+#astro {
+    display: block;
+    margin: auto;    
+}
