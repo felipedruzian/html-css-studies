@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(19, 24, 46);
+            color: white;
+        }
+
+        /*efeito zebrado na tabela*/
+        tbody > tr:nth-child(2n) { /*odd (impar) ou even (par)*/
+            background-color: lightgray;
+        }
+
+        /*cabeçalho fixo to topo da tela*/
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(19, 24, 46);
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+            height: 50px;
+        }
+
+        .pop {
+            text-align: right;
+        }
+
+        .ind {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas GRANDES</h1>
+    <!--
+        Anatomia para TABELAS GRANDES
+        TABLE
+            THEAD
+                TR
+                    TH, TD
+            TBODY
+                TR
+                    TH, TD
+            TFOOT
+                TR
+                    TH, TD
+    -->
+
+    <table>
+        <caption>População por Estado Brasileiro</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 100px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="ind">1</td>
+                <td>São Paulo</td>
+                <td class="pop">45.919.049</td>
+            </tr>
+            <tr>
+                <td class="ind">2</td>
+                <td>Minas Gerais</td>
+                <td class="pop">21.168.791</td>
+            </tr>
+            <tr>
+                <td class="ind">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="pop">17.264.943</td>
+            </tr>
+            <tr>
+                <td class="ind">4</td>
+                <td>Bahia</td>
+                <td class="pop">14.016.906</td>
+            </tr>
+            <tr>
+                <td class="ind">5</td>
+                <td>Paraná</td>
+                <td class="pop">10.444.526</td>
+            </tr>
+            <tr>
+                <td class="ind">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="pop">10.693.929</td>
+            </tr>
+            <tr>
+                <td class="ind">7</td>
+                <td>Pernambuco</td>
+                <td class="pop">8.796.448</td>
+            </tr>
+            <tr>
+                <td class="ind">8</td>
+                <td>Ceará</td>
+                <td class="pop">8.452.381</td>
+            </tr>
+            <tr>
+                <td class="ind">9</td>
+                <td>Pará</td>
+                <td class="pop">7.581.051</td>
+            </tr>
+            <tr>
+                <td class="ind">10</td>
+                <td>Santa Catarina</td>
+                <td class="pop">6.248.436</td>
+            </tr>
+            <tr>
+                <td class="ind">11</td>
+                <td>Goiás</td>
+                <td class="pop">6.003.788</td>
+            </tr>
+            <tr>
+                <td class="ind">12</td>
+                <td>Maranhão</td>
+                <td class="pop">6.574.789</td>
+            </tr>
+            <tr>
+                <td class="ind">13</td>
+                <td>Amazonas</td>
+                <td class="pop">3.483.985</td>
+            </tr>
+            <tr>
+                <td class="ind">14</td>
+                <td>Espírito Santo</td>
+                <td class="pop">3.514.952</td>
+            </tr>
+            <tr>
+                <td class="ind">15</td>
+                <td>Paraíba</td>
+                <td class="pop">3.766.528</td>
+            </tr>
+            <tr>
+                <td class="ind">16</td>
+                <td>Mato Grosso</td>
+                <td class="pop">3.035.122</td>
+            </tr>
+            <tr>
+                <td class="ind">17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="pop">3.168.027</td>
+            </tr>
+            <tr>
+                <td class="ind">18</td>
+                <td>Alagoas</td>
+                <td class="pop">3.120.494</td>
+            </tr>
+            <tr>
+                <td class="ind">19</td>
+                <td>Piauí</td>
+                <td class="pop">3.118.360</td>
+            </tr>
+            <tr>
+                <td class="ind">20</td>
+                <td>Distrito Federal</td>
+                <td class="pop">2.570.160</td>
+            </tr>
+            <tr>
+                <td class="ind">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="pop">2.449.024</td>
+            </tr>
+            <tr>
+                <td class="ind">22</td>
+                <td>Sergipe</td>
+                <td class="pop">2.068.017</td>
+            </tr>
+            <tr>
+                <td class="ind">23</td>
+                <td>Rondônia</td>
+                <td class="pop">1.562.409</td>
+            </tr>
+            <tr>
+                <td class="ind">24</td>
+                <td>Tocantins</td>
+                <td class="pop">1.383.445</td>
+            </tr>
+            <tr>
+                <td class="ind">25</td>
+                <td>Acre</td>
+                <td class="pop">733.559</td>
+            </tr>
+            <tr>
+                <td class="ind">26</td>
+                <td>Amapá</td>
+                <td class="pop">669.526</td>
+            </tr>
+            <tr>
+                <td class="ind">27</td>
+                <td>Roraima</td>
+                <td class="pop">450.479</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row" colspan="2">Total de Habitantes</th> <!-- rowspan para a celula ocupar mas de uma linha-->
+            <td class="pop">210.147.125</td>
+        </tfoot>
+    </table>
+</body>
+</html>
