@@ -1,2 +1,9 @@
-# html-css
- Repositório dos exercícios e desafios feitos por mim do curso de HTML5 e CSS3 (Módulo 1) do Prof. Gustava Guanabara
+# Curso de HTML5 e CSS3
+ <img src="https://raw.githubusercontent.com/gustavoguanabara/gustavoguanabara.github.io/master/images/mascote-html5.png" align="right" width="300">
+ Repositório com os exercícios e desafios feitos por mim durante o curso de HTML5 e CSS3 (Módulo 1) do Curso em Vídeo com o professor Gustava Guanabara.
+ 
+## Módulos concluidos:
+ * Módulo 1 ✅
+ * Módulo 2 ✅
+ * Módulo 3 ✅
+ * Módulo 4 🔄
